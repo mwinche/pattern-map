@@ -1,0 +1,5 @@
+/node_modules/
+npm-debug.log
+.idea/
+pattern-map.iml
+coverage

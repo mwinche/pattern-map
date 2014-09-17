@@ -1,0 +1,37 @@
+{
+  "name": "pattern-map",
+  "version": "0.0.0",
+  "main": "lib/pattern-map.js",
+  "description": "Maps patterns with matching tokens to each other.",
+  "homepage": "https://github.com/mwinche/pattern-map",
+  "bugs": "https://github.com/mwinche/pattern-map/issues",
+  "author": {
+    "name": "Matt Winchester",
+    "email": "m_winche@yahoo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwinche/pattern-map"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pattern-map",
+    "mapping",
+    "pattern map",
+    "map pattern",
+    "pattern",
+    "map"
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0",
+    "grunt-jasmine-node-coverage": "^0.1.11"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {}
+}
