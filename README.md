@@ -5,7 +5,7 @@ pattern-map
 
 	npm install pattern-map
 
-This module allows for matching patterns and extracting matches from those pattern. Once the matches are extracted they then can be applied to other patterns to resolve them and create new strings.
+This module allows for matching patterns and extracting matches from those patterns. Once the matches are extracted they then can be applied to other patterns to resolve them and create new strings.
 
 Sample usage:
 
@@ -33,7 +33,7 @@ Example:
 
 ### pattern.tokens([ unique ]) ###
 
-Returns all tokens in the order they are defined in the pattern. If unique is truthy, it will only return unique tokens.
+Returns all tokens in the order they are defined in the pattern. If `unique` is truthy, it will only return unique tokens.
 
 Example:
 
@@ -51,6 +51,9 @@ Example:
 
 	patternMap('/modules/{app}.js?build={version}').match('/modules/chat.js?build=0.1.3');
 	// { 'app' : 'chat', 'version' : '0.1.3' }
+	
+	patternMap('/modules/{app}.js?build={version}').match('/a/different/path');
+	// undefined
 
 ### pattern.resolve(matches) ###
 

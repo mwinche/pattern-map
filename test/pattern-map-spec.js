@@ -34,15 +34,19 @@ describe('pattern', function(){
 		});
 
 		it('should allow duplicates', function(){
-			expect(patternMap('/{one}/{one}').tokens().length).toBe(2);
-			expect(patternMap('/{one}/{one}').tokens()[0]).toBe('one');
-			expect(patternMap('/{one}/{one}').tokens()[1]).toBe('one');
+			var tokens = patternMap('/{one}/{one}').tokens();
+
+			expect(tokens.length).toBe(2);
+			expect(tokens[0]).toBe('one');
+			expect(tokens[1]).toBe('one');
 		});
 
 		it('should allow to retrieve only unique tokens', function(){
-			expect(patternMap('/{one}/{two}/{one}').tokens(true).length).toBe(2);
-			expect(patternMap('/{one}/{two}/{one}').tokens(true)[0]).toBe('one');
-			expect(patternMap('/{one}/{two}/{one}').tokens(true)[1]).toBe('two');
+			var tokens = patternMap('/{one}/{two}/{one}').tokens(true);
+
+			expect(tokens.length).toBe(2);
+			expect(tokens[0]).toBe('one');
+			expect(tokens[1]).toBe('two');
 		});
 	});
 
