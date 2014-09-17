@@ -1,5 +1,7 @@
-pattern map
+pattern-map
 ===========
+
+[![Build Status](https://secure.travis-ci.org/mwinche/pattern-map.png?branch=master)](http://travis-ci.org/mwinche/pattern-map)
 
 	npm install pattern-map
 
