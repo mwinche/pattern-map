@@ -1,6 +1,6 @@
 {
   "name": "pattern-map",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/pattern-map.js",
   "description": "Maps patterns with matching tokens to each other.",
   "homepage": "https://github.com/mwinche/pattern-map",
